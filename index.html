@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<link rel="Stylesheet" href="style.css">
+<body>
+
+<header>
+  <h1>My Store</h1>
+</header>
+
+<div class="container fade" id="mainPage">
+  <div class="products" id="products"></div>
+
+  <div class="cart">
+    <h3>Cart</h3>
+    <div id="cartItems"></div>
+    <h4>Total: $<span id="total">0</span></h4>
+    <button onclick="goToCheckout()">Checkout</button>
+  </div>
+</div>
+
+<!-- Checkout -->
+<div class="checkout fade" id="checkoutPage">
+  <h2>Checkout</h2>
+  <input placeholder="Card Number">
+  <input placeholder="Name on Card">
+  <input placeholder="Expiry Date">
+  <input placeholder="CVV">
+  <button onclick="pay()">Pay</button>
+</div>
+
+<!-- Success -->
+<div class="success fade" id="successPage">
+  <h2>✅ Payment Successful!</h2>
+  <p>Thank you for your purchase.</p>
+  <div id="summary"></div>
+</div>
+</body>
+</html>
